@@ -18,12 +18,12 @@
     background-color: white;
     border-radius: 8px;
     text-align: right;
-    padding: 10px 20px 10px 0;
+    padding: 15px 20px 15px 0;
     height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 40px;
+    text-overflow: ellipsis;
 
 }
 #button-grid {
@@ -47,8 +47,16 @@
     border-radius: 10px;
     border: solid black 1px;
 }
+button:disabled {
+    pointer-events: none;
+}
 #bottomscreen {
     font-size: 40px;
+    max-width: 338px;
+    max-height: 80px;
+}
+#topscreen {
+    font-size: 20px;
 }
 * {
     font-size: large;
@@ -57,4 +65,7 @@
 }
 footer {
     text-align: center;
+}
+.disable {
+    pointer-events: none;
 }
