@@ -21,7 +21,7 @@ const inputNum = (button) => {
     
 }
 
-const addOperator = () => {
+const addOperator = (button) => {
     //so two operators are not next to each other
     if(operatorPressed){
         let str = bottomScreen.textContent.slice(0,-1) + button.textContent
@@ -85,7 +85,7 @@ numberBtn.forEach(button => {
 
 operatorBtn.forEach(button => {
     button.addEventListener('click', function() {
-        addOperator()
+        addOperator(button)
     }
     )
 })
