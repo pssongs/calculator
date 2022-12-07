@@ -62,6 +62,7 @@ button:disabled {
     font-size: large;
     font-family:'Courier New', Courier, monospace ;
     font-weight: 600;
+    color: black;
 }
 footer {
     text-align: center;
